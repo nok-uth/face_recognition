@@ -1,0 +1,14 @@
+# Ignore video files
+*.mp4
+*.avi
+*.mov
+data/input_videos/
+
+#ignore the SQLlite database
+*.db
+data/attendance.db
+
+# Ignore Python cache and virtual environments
+__pycache__/
+venv/
+.env 

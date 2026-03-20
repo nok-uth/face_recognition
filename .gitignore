@@ -1,14 +1,15 @@
-# Ignore video files
-*.mp4
-*.avi
-*.mov
-data/input_videos/
-
-#ignore the SQLlite database
-*.db
-data/attendance.db
-
-# Ignore Python cache and virtual environments
-__pycache__/
+# Ignore virtual environments
 venv/
-.env 
+env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore heavy video files but keep the folders
+data/input_videos/*.mp4
+data/input_videos/*.mov
+data/input_videos/*.avi
+
+# Ignore the trained AI brain (it should be trained locally)
+data/*.yml
